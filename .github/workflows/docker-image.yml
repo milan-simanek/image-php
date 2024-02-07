@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag milansimanek/php:$(cat tag) \
+      run: docker build . --file Dockerfile --tag milansimanek/php:$(cat tag)
         && docker push milansimanek/php$(cat tag)
